@@ -6,6 +6,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
+	<link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
 	
@@ -22,6 +23,13 @@
 			<li><a href="#">Skills</a></li>
 		</ul>
 	</header><!--/.main-header-->   
+    
+	<script>
+	var harold = { name: 'Harold', age: 51, snack: 'twizzlers' };
+    var message = `Hello, I'm ${person.name}. I'm ${person.age} and I love ${person.snack}!`;
+
+    console.log(message); 
+    </script>
 
 	<div class="banner">
 		<img class="logo" src="img/profile.png" alt="Harold">
@@ -80,7 +88,13 @@
 		<!--
 		<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
 		-->
-		
+
+		<p>Here's an animation just for you.</p>
+		<div class='at-container'>
+			<div class='at-item' >
+			</div>
+		  </div>
+
 		<script>
 		function myFunction() {
 		  var x = document.getElementById("myDIV");
