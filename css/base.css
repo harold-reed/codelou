@@ -115,11 +115,17 @@ img {
 	.tagline {
 		font-size: 1.4em;
 	}
+	.col * {
+		min-width: 5px;
+	}
 }
 @media (min-width: 1025px) {
 	.main-header,
 	.row {
 		width: 80%;
 		max-width: 1150px;
+	}
+	.col * {
+		min-width: 5px;
 	}
 }

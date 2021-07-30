@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
 	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/videostyles.css">
 </head>
 <body>
 	
@@ -102,6 +103,31 @@
 		  }
 		}
 		</script>
+
+<figure id="videoContainer" data-fullscreen="false">
+	<video id="video" controls preload="metadata" poster="img/poster.jpg">
+		<source src="img/barn8.mp4" type="video/mp4">
+		
+		<!-- Offer download -->
+		<a href="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4">Download MP4</a>
+	</video>
+	<div id="video-controls" class="controls" data-state="hidden">
+		<button id="playpause" type="button" data-state="play">Play/Pause</button>
+		<button id="stop" type="button" data-state="stop">Stop</button>
+		<div class="progress">
+			<progress id="progress" value="0" min="0">
+				<span id="progress-bar"></span>
+			</progress>
+		</div>
+		<button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+		<button id="volinc" type="button" data-state="volup">Vol+</button>
+		<button id="voldec" type="button" data-state="voldown">Vol-</button>
+		<button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+	</div>
+	<figcaption>
+		&copy; Blender Foundation | <a href="http://mango.blender.org">mango.blender.org</a>
+	</figcaption>
+</figure>
 
 
 	<footer class="main-footer">
